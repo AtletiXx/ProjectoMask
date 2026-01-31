@@ -16,6 +16,8 @@ public class MaskBehaviour : MonoBehaviour
 
     public int compActuales;
     
+    public HandMovement Manos;
+    
     void Start()
     {
         
@@ -38,5 +40,12 @@ public class MaskBehaviour : MonoBehaviour
 
         transform.position = new Vector3(clampX, clampY, transform.position.z);
         }
+
+        if (compActuales == numComponentes)
+        {
+            Manos.lista = true;
+        }
+
+
     }
 }
