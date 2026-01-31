@@ -14,6 +14,10 @@ public class HandMovement : MonoBehaviour
 
     public MaskBehaviour mascara;
 
+    public bool lista = false;
+
+    
+
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -50,7 +54,7 @@ public class HandMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (closed && collision.gameObject.tag == "Mascara")
+        if (lista && closed && collision.gameObject.tag == "Mascara")
         {
             mascara.agarrada = true;
             Debug.Log("Tocando mascara"); 

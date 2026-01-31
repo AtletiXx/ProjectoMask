@@ -12,7 +12,9 @@ public class MaskBehaviour : MonoBehaviour
     public float minY = -3f;
     public float maxY = 3f;
     
-    
+    public int numComponentes;
+
+    public int compActuales;
     
     void Start()
     {
