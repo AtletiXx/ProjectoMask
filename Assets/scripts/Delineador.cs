@@ -1,13 +1,14 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class PointLineGenerator : MonoBehaviour
+public class Delineador : MonoBehaviour
 {
     public List<Transform> pointsIniciales = new List<Transform>();
     public GameObject pointPrefab;
     public float distanceBetweenPoints = 0.2f;
 
     public List<Transform> points = new List<Transform>();
+    public int numPuntos;
 
     void Start()
     {
@@ -29,5 +30,22 @@ public class PointLineGenerator : MonoBehaviour
             GameObject p = Instantiate(pointPrefab, pos, Quaternion.identity, transform);
             points.Add(p.transform);
         }
+    }
+
+    public void AddPuntos() {
+        numPuntos += 1;
+        if (numPuntos == points.Count) {
+            win();
+        }
+    }
+
+    void win()
+    {
+        Debug.Log("Ganaste");
+    }
+
+    public void Lose()
+    {
+        Debug.Log("Perdiste");
     }
 }

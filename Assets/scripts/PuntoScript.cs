@@ -8,6 +8,8 @@ public class PuntoScript : MonoBehaviour
 
     private bool _cosit = false;
 
+    private Delineador _delineador;
+
     private float targetTime = 3.0f;
 
     private SpriteRenderer _color;
@@ -16,6 +18,8 @@ public class PuntoScript : MonoBehaviour
     void Start()
     {
         _color = GetComponent<SpriteRenderer>();
+        _delineador = GetComponentInParent<Delineador>();
+
     }
 
     // Update is called once per frame
@@ -24,7 +28,6 @@ public class PuntoScript : MonoBehaviour
         if (utilitzat == true) {
             _color.color = Color.red;
         }   
-        
         if (_timerIni == true) {
             targetTime -= Time.deltaTime;
         }
@@ -40,21 +43,29 @@ public class PuntoScript : MonoBehaviour
     {
         if (_cosit == false)
         {
+            _delineador.AddPuntos();
             utilitzat = true;
         }
-        else {
-           //...
+        else if (utilitzat == false) {
+           _delineador.Lose();
         }
     }
 
     public void EmpezarTimer()
     {
-        _timerIni = true;
+        if (_cosit == false)
+        {
+            _timerIni = true;
+            _cosit = true;
+        }
     }
 
     void timerEnded()
     {
+       _timerIni = false;
        _color.color = Color.black;
+       targetTime = 3.0f;
+       utilitzat = false;
     }           
 
 }
