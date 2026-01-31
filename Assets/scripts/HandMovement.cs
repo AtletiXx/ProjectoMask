@@ -10,10 +10,14 @@ public class HandMovement : MonoBehaviour
 
     private Animator _animator;
 
+    public bool closed = false;
+
+    public MaskBehaviour mascara;
+
     void Start()
     {
-        _animator.SetBool("IsClose", false);
         _animator = GetComponent<Animator>();
+        _animator.SetBool("IsClose", false);
     }
 
 
@@ -35,11 +39,28 @@ public class HandMovement : MonoBehaviour
         if (Mouse.current.leftButton.isPressed)
         {
             _animator.SetBool("IsClose", true);
+            closed = true;
         }
         else
         {
             _animator.SetBool("IsClose", false);
+            closed = false;
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (closed && collision.gameObject.tag == "Mascara")
+        {
+            mascara.agarrada = true;
+            //Debug.Log("Tocando mascara"); 
+        }
+        else
+        {
+            mascara.agarrada = false;
+        }
+    }
+
+
 }
 
