@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: mascaraInicialBlanca
     originalName: 
-    pivot: {x: 0.5, y: -0.16}
+    pivot: {x: 0.4911251, y: -0.158249}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 

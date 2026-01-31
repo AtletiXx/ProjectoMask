@@ -53,7 +53,7 @@ public class HandMovement : MonoBehaviour
         if (closed && collision.gameObject.tag == "Mascara")
         {
             mascara.agarrada = true;
-            //Debug.Log("Tocando mascara"); 
+            Debug.Log("Tocando mascara"); 
         }
         else
         {
