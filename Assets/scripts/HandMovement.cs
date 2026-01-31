@@ -8,6 +8,15 @@ public class HandMovement : MonoBehaviour
     public float minY = -3f;
     public float maxY = 3f;
 
+    private Animator _animator;
+
+    void Start()
+    {
+        _animator.SetBool("IsClose", false);
+        _animator = GetComponent<Animator>();
+    }
+
+
     void Update()
     {
         // Leer posición del ratón con el NEW Input System
@@ -21,6 +30,16 @@ public class HandMovement : MonoBehaviour
         float clampY = Mathf.Clamp(worldPos.y, minY, maxY);
 
         transform.position = new Vector3(clampX, clampY, transform.position.z);
+
+        //movimiento de coser
+        if (Mouse.current.leftButton.isPressed)
+        {
+            _animator.SetBool("IsClose", true);
+        }
+        else
+        {
+            _animator.SetBool("IsClose", false);
+        }
     }
 }
 

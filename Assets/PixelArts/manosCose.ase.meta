@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 85369e0467bc1b65b90752c7d508a72f
+guid: 183076fff3dcad4d5822a7330dd8f3ac
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: manos
+  - name: manosCose
     originalName: 
-    pivot: {x: 0.5, y: 0.53901905}
+    pivot: {x: 0.49016762, y: 0.3742431}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 138
-      height: 57
-    spriteID: b1b6c564f617ec0e6aeca24b1d59b31c
+      width: 94
+      height: 36
+    spriteID: cae93c7dd29c16e57b654456957bf73e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 996741900
+      value0: 4256895046
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: manos
+    name: manosCose
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: manos
+    - name: manosCose
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 31
-        y: 30
-        width: 138
-        height: 57
-      spriteId: b1b6c564f617ec0e6aeca24b1d59b31c
+        x: 54
+        y: 35
+        width: 94
+        height: 36
+      spriteId: cae93c7dd29c16e57b654456957bf73e
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -182,4 +182,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 200, y: 200}
-  previousTextureSize: {x: 256, y: 128}
+  previousTextureSize: {x: 128, y: 64}
