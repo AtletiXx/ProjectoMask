@@ -3,11 +3,13 @@ using System.Collections.Generic;
 
 public class Delineador : MonoBehaviour
 {
+    public GameObject SpriteAcabado;
+
     public List<Transform> pointsIniciales = new List<Transform>();
     public GameObject pointPrefab;
     public float distanceBetweenPoints = 0.2f;
 
-    public List<Transform> points = new List<Transform>();
+    public List<GameObject> points = new List<GameObject>();
     public int numPuntos;
 
     void Start()
@@ -28,7 +30,7 @@ public class Delineador : MonoBehaviour
             float t = i / (float)amount;
             Vector2 pos = Vector2.Lerp(startPoint.position, endPoint.position, t);
             GameObject p = Instantiate(pointPrefab, pos, Quaternion.identity, transform);
-            points.Add(p.transform);
+            points.Add(p);
         }
     }
 
@@ -41,11 +43,24 @@ public class Delineador : MonoBehaviour
 
     void win()
     {
-        Debug.Log("Ganaste");
+        SpriteAcabado.SetActive(true);
+        destroypoints();
     }
 
     public void Lose()
     {
         Debug.Log("Perdiste");
     }
+
+    void destroypoints()
+    {
+        Debug.Log(points.Count);
+        for (int i = 0; i < points.Count; i++)
+        {
+            Destroy(points[i]);
+        }
+        points.Clear();
+
+    }
+
 }

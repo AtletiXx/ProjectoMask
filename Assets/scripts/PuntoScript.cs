@@ -10,7 +10,7 @@ public class PuntoScript : MonoBehaviour
 
     private Delineador _delineador;
 
-    private float targetTime = 3.0f;
+    private float targetTime = 1.5f;
 
     private SpriteRenderer _color;
 
