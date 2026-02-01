@@ -1172,7 +1172,7 @@ MonoBehaviour:
   maxX: 14
   minY: -3
   maxY: 3
-  numComponentes: 0
+  numComponentes: 6
   compActuales: 0
   Manos: {fileID: 0}
 --- !u!50 &839096343
