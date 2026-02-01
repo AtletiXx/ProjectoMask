@@ -35,6 +35,7 @@ public class Delineador : MonoBehaviour
             GameObject p = Instantiate(pointPrefab, pos, Quaternion.identity, transform);
             if (BTijeras == true) {
                 p.tag = "Tijera";
+                p.GetComponent<SpriteRenderer>().color = Color.purple;
             }
             points.Add(p);
         }
