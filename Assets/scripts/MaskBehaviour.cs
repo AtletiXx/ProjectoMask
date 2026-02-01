@@ -22,7 +22,7 @@ public class MaskBehaviour : MonoBehaviour
     
     void Start()
     {
-        
+        luchador.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,9 +46,16 @@ public class MaskBehaviour : MonoBehaviour
         if (compActuales == numComponentes)
         {
             Manos.lista = true;
+            luchador.SetActive(true); 
         }
 
-        
+    }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Luchador"))
+        {
+        Destroy(gameObject);
+        }
     }
 }
