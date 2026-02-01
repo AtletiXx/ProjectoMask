@@ -36,7 +36,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: cortando
+    m_ConditionEvent: cosiendo
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2119005217826224288}
@@ -86,7 +86,7 @@ AnimatorController:
   m_Name: Tijeras
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: cortando
+  - m_Name: cosiendo
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -114,7 +114,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: cortando
+    m_ConditionEvent: cosiendo
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3370321568845720624}

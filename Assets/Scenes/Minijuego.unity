@@ -1971,7 +1971,7 @@ Transform:
   m_GameObject: {fileID: 1287347971}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.64, y: 0.58, z: -2}
+  m_LocalPosition: {x: 0.64, y: 0.58, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2117,8 +2117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a321ffc5640da54e93502adf330f94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  minX: -5
-  maxX: 5
+  minX: -12
+  maxX: 12
   minY: -3
   maxY: 3
 --- !u!114 &1287347978
@@ -2130,10 +2130,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1287347971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fad8acdf5cbe0878ae721c14db03bb0, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ec1e18456ce1e263a578b63cf6ce474, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TijerasBehaviour
-  cortando: 0
+  m_EditorClassIdentifier: Assembly-CSharp::CursorBehaviour
+  cosiendo: 0
 --- !u!1001 &1340301243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2264,7 +2264,7 @@ Transform:
   m_GameObject: {fileID: 1383187631}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.17315827, w: 0.98489404}
-  m_LocalPosition: {x: -0.10376996, y: -0.047479987, z: 4}
+  m_LocalPosition: {x: -0.10376996, y: -0.047479987, z: -2}
   m_LocalScale: {x: 4.510495, y: 4.510495, z: 4.510495}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3334,8 +3334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a321ffc5640da54e93502adf330f94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  minX: -5
-  maxX: 5
+  minX: -12
+  maxX: 12
   minY: -3
   maxY: 3
 --- !u!4 &1971132201
