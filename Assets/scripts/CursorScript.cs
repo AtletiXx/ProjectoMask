@@ -24,7 +24,10 @@ public class CursorScript : MonoBehaviour
     {
         if ((tijeras == false && other.CompareTag("Punto")) || (tijeras == true && other.CompareTag("Tijera")))
         {
-            other.GetComponent<PuntoScript>()?.Coser();
+            if (Mouse.current.leftButton.isPressed)
+            {
+                other.GetComponent<PuntoScript>()?.Coser();
+            }
         }
     }
 

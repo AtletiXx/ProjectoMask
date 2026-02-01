@@ -53,7 +53,7 @@ public class PuntoScript : MonoBehaviour
 
     public void EmpezarTimer()
     {
-        if (_cosit == false)
+        if (_cosit == false && utilitzat == true)
         {
             _timerIni = true;
             _cosit = true;
