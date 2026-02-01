@@ -1423,7 +1423,7 @@ MonoBehaviour:
   points: []
   numPuntos: 0
   Mascara: {fileID: 839096342}
-  BTijeras: 0
+  BTijeras: 1
 --- !u!1 &927607970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,7 +1601,7 @@ MonoBehaviour:
   points: []
   numPuntos: 0
   Mascara: {fileID: 839096342}
-  BTijeras: 0
+  BTijeras: 1
 --- !u!1 &982965849
 GameObject:
   m_ObjectHideFlags: 0
@@ -2122,7 +2122,7 @@ MonoBehaviour:
   maxX: 12
   minY: -3
   maxY: 3
-  tijeras: 0
+  tijeras: 1
 --- !u!114 &1287347978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2696,7 +2696,7 @@ MonoBehaviour:
   points: []
   numPuntos: 0
   Mascara: {fileID: 839096342}
-  BTijeras: 0
+  BTijeras: 1
 --- !u!1 &1588951317
 GameObject:
   m_ObjectHideFlags: 0
@@ -3046,7 +3046,7 @@ MonoBehaviour:
   points: []
   numPuntos: 0
   Mascara: {fileID: 839096342}
-  BTijeras: 1
+  BTijeras: 0
 --- !u!1 &1829237618
 GameObject:
   m_ObjectHideFlags: 0
