@@ -19,6 +19,9 @@ public class MaskBehaviour : MonoBehaviour
     public HandMovement Manos;
 
     public GameObject luchador;
+    public GameObject canva;
+
+    public AudioClip musicaEscena;
     
     void Start()
     {
@@ -57,6 +60,9 @@ public class MaskBehaviour : MonoBehaviour
         {
         Destroy(gameObject, 0.5f);
         Destroy(luchador, 1.0f);
+        canva.SetActive(true);
+        FindFirstObjectByType<MusicManager>().CambiarMusica(musicaEscena);
+
         }
     }
 }

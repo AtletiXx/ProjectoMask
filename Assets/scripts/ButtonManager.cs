@@ -12,4 +12,9 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("Help");
     }
+
+    public void Salir()
+    {
+        Application.Quit();
+    }
 }
