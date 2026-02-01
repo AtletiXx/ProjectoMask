@@ -13,6 +13,7 @@ public class Delineador : MonoBehaviour
     public int numPuntos;
 
     public MaskBehaviour Mascara;
+    public bool BTijeras;
 
     void Start()
     {
@@ -32,6 +33,9 @@ public class Delineador : MonoBehaviour
             float t = i / (float)amount;
             Vector2 pos = Vector2.Lerp(startPoint.position, endPoint.position, t);
             GameObject p = Instantiate(pointPrefab, pos, Quaternion.identity, transform);
+            if (BTijeras == true) {
+                p.tag = "Tijeras";
+            }
             points.Add(p);
         }
     }
