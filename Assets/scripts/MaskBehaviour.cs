@@ -17,6 +17,8 @@ public class MaskBehaviour : MonoBehaviour
     public int compActuales;
     
     public HandMovement Manos;
+
+    public GameObject luchador;
     
     void Start()
     {
@@ -46,6 +48,7 @@ public class MaskBehaviour : MonoBehaviour
             Manos.lista = true;
         }
 
+        
 
     }
 }
