@@ -55,7 +55,8 @@ public class MaskBehaviour : MonoBehaviour
     {
         if(other.CompareTag("Luchador"))
         {
-        Destroy(gameObject);
+        Destroy(gameObject, 0.5f);
+        Destroy(luchador, 1.0f);
         }
     }
 }
