@@ -655,6 +655,7 @@ Transform:
   - {fileID: 1574671799}
   - {fileID: 1971132201}
   - {fileID: 1287347972}
+  - {fileID: 1588951318}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &350327675
@@ -2121,6 +2122,7 @@ MonoBehaviour:
   maxX: 12
   minY: -3
   maxY: 3
+  tijeras: 0
 --- !u!114 &1287347978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2695,6 +2697,37 @@ MonoBehaviour:
   numPuntos: 0
   Mascara: {fileID: 839096342}
   BTijeras: 0
+--- !u!1 &1588951317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1588951318}
+  m_Layer: 0
+  m_Name: Tijeras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1588951318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588951317}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.016369998, y: -0.19053, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 338001950}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1648411359
 GameObject:
   m_ObjectHideFlags: 0
@@ -3013,7 +3046,7 @@ MonoBehaviour:
   points: []
   numPuntos: 0
   Mascara: {fileID: 839096342}
-  BTijeras: 0
+  BTijeras: 1
 --- !u!1 &1829237618
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,6 +3371,7 @@ MonoBehaviour:
   maxX: 12
   minY: -3
   maxY: 3
+  tijeras: 0
 --- !u!4 &1971132201
 Transform:
   m_ObjectHideFlags: 0

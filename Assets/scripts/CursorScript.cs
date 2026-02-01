@@ -12,6 +12,8 @@ public class CursorScript : MonoBehaviour
 
     public float maxY = 5f;
 
+    public bool tijeras = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +22,7 @@ public class CursorScript : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other) 
     {
-        if (other.CompareTag("Punto"))
+        if ((tijeras == false && other.CompareTag("Punto")) || (tijeras == true && other.CompareTag("Tijera")))
         {
             other.GetComponent<PuntoScript>()?.Coser();
         }
@@ -28,7 +30,7 @@ public class CursorScript : MonoBehaviour
 
     void OnTriggerExit2D (Collider2D other)
     {
-        if (other.CompareTag("Punto"))
+        if ((tijeras == false && other.CompareTag("Punto")) || (tijeras == true && other.CompareTag("Tijera")))
         {
             other.GetComponent<PuntoScript>()?.EmpezarTimer();
         }

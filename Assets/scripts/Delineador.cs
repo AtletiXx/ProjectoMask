@@ -34,7 +34,7 @@ public class Delineador : MonoBehaviour
             Vector2 pos = Vector2.Lerp(startPoint.position, endPoint.position, t);
             GameObject p = Instantiate(pointPrefab, pos, Quaternion.identity, transform);
             if (BTijeras == true) {
-                p.tag = "Tijeras";
+                p.tag = "Tijera";
             }
             points.Add(p);
         }
