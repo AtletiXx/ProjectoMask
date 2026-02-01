@@ -26,7 +26,7 @@ public class PuntoScript : MonoBehaviour
     void Update()
     {
         if (utilitzat == true) {
-            _color.color = Color.red;
+            _color.color = Color.green;
         }   
         if (_timerIni == true) {
             targetTime -= Time.deltaTime;
@@ -63,7 +63,7 @@ public class PuntoScript : MonoBehaviour
     void timerEnded()
     {
        _timerIni = false;
-       _color.color = Color.black;
+       _color.color = Color.red;
        targetTime = 3.0f;
        utilitzat = false;
     }           

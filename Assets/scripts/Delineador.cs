@@ -12,6 +12,8 @@ public class Delineador : MonoBehaviour
     public List<GameObject> points = new List<GameObject>();
     public int numPuntos;
 
+    public MaskBehaviour Mascara;
+
     void Start()
     {
         for (int i = 0; i + 1 < pointsIniciales.Count; i++)
@@ -43,6 +45,7 @@ public class Delineador : MonoBehaviour
 
     void win()
     {
+        Mascara.compActuales += 1;
         SpriteAcabado.SetActive(true);
         destroypoints();
     }

@@ -12,7 +12,11 @@ public class MaskBehaviour : MonoBehaviour
     public float minY = -3f;
     public float maxY = 3f;
     
+    public int numComponentes;
+
+    public int compActuales;
     
+    public HandMovement Manos;
     
     void Start()
     {
@@ -36,5 +40,12 @@ public class MaskBehaviour : MonoBehaviour
 
         transform.position = new Vector3(clampX, clampY, transform.position.z);
         }
+
+        if (compActuales == numComponentes)
+        {
+            Manos.lista = true;
+        }
+
+
     }
 }
