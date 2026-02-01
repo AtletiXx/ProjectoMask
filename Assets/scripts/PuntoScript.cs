@@ -12,7 +12,7 @@ public class PuntoScript : MonoBehaviour
 
     private float targetTime = 1.5f;
 
-    private SpriteRenderer _color;
+    public SpriteRenderer _color;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
