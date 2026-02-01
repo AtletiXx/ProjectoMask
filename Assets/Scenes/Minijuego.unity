@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a5d9c3e11c06716318bb60256a570757, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: a5d9c3e11c06716318bb60256a570757, type: 3}
       propertyPath: m_LocalRotation.w
@@ -249,11 +249,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 3f616ce02c29bce48b9a2838b68d841b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.719
+      value: 0.50327057
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 3f616ce02c29bce48b9a2838b68d841b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.322
+      value: -4.8901205
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 3f616ce02c29bce48b9a2838b68d841b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -512,7 +512,6 @@ MonoBehaviour:
   distanceBetweenPoints: 0.15
   points: []
   numPuntos: 0
-  Mascara: {fileID: 0}
 --- !u!1 &279398543
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,7 +948,6 @@ MonoBehaviour:
   distanceBetweenPoints: 0.15
   points: []
   numPuntos: 0
-  Mascara: {fileID: 0}
 --- !u!1 &675366688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,9 +1170,6 @@ MonoBehaviour:
   maxX: 14
   minY: -3
   maxY: 3
-  numComponentes: 6
-  compActuales: 0
-  Manos: {fileID: 0}
 --- !u!50 &839096343
 Rigidbody2D:
   serializedVersion: 5
@@ -1324,7 +1319,6 @@ MonoBehaviour:
   distanceBetweenPoints: 0.15
   points: []
   numPuntos: 0
-  Mascara: {fileID: 0}
 --- !u!1 &927607970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,7 +1484,6 @@ MonoBehaviour:
   distanceBetweenPoints: 0.15
   points: []
   numPuntos: 0
-  Mascara: {fileID: 0}
 --- !u!1 &982965849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,11 +1719,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 3f616ce02c29bce48b9a2838b68d841b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.719
+      value: 0.50327057
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 3f616ce02c29bce48b9a2838b68d841b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.322
+      value: -4.8901205
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 3f616ce02c29bce48b9a2838b68d841b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2289,7 +2282,6 @@ MonoBehaviour:
   distanceBetweenPoints: 0.15
   points: []
   numPuntos: 0
-  Mascara: {fileID: 0}
 --- !u!1 &1648411359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,7 +2508,6 @@ MonoBehaviour:
   distanceBetweenPoints: 0.15
   points: []
   numPuntos: 0
-  Mascara: {fileID: 0}
 --- !u!1 &1829237618
 GameObject:
   m_ObjectHideFlags: 0
